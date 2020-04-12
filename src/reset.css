@@ -1,0 +1,45 @@
+/*
+ * @Author: vimin 
+ * @Date: 2020-04-12 10:50:04 
+ * @Last Modified by: vimin
+ * @Last Modified time: 2020-04-12 10:50:49
+ */
+
+ /*
+ *这里是重置样式，主要用于覆盖浏览器默认样式
+ *用标签选择器进行样式的设置可以增加css选择器的匹配效率，
+ *因此不选用统配符选择器*进行样式重置
+ *
+ */
+
+/* 去掉所有元素的内外边距 */
+html, body, div, span,
+h1, h2, h3, h4, h5, h6, p, pre,
+a, img,  ul, li, form, label, input,
+table, tbody, tfoot, thead, tr, th, td,
+audio, video {
+	margin: 0;
+	padding: 0;
+}
+/* 统一全局字体 */
+body {
+	font-family: -apple-system-font,BlinkMacSystemFont,"Helvetica Neue","PingFang SC","Hiragino Sans GB","Microsoft YaHei UI","Microsoft YaHei",Arial,sans-serif
+}
+/* 列表元素去掉默认的列表样式 */
+ol, ul {
+	list-style: none;
+}
+/* Table元素的边框折叠 */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* 去掉a标签默认的下划线 */
+a{
+	text-decoration: none;
+}
+/* 去掉input自带的边缘效果和背景颜色 */
+input{
+	outline: none;
+	background: none;
+}
