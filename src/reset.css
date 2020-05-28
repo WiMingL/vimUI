@@ -2,7 +2,7 @@
  * @Author: vimin 
  * @Date: 2020-04-12 10:50:04 
  * @Last Modified by: vimin
- * @Last Modified time: 2020-04-12 10:50:49
+ * @Last Modified time: 2020-04-16 00:11:14
  */
 
  /*
@@ -13,33 +13,56 @@
  */
 
 /* 去掉所有元素的内外边距 */
-html, body, div, span,
-h1, h2, h3, h4, h5, h6, p, pre,
-a, img,  ul, li, form, label, input,
-table, tbody, tfoot, thead, tr, th, td,
-audio, video {
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
 	margin: 0;
 	padding: 0;
+	border: 0;
+	font: inherit;
+	vertical-align: baseline;
 }
-/* 统一全局字体 */
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
 body {
-	font-family: -apple-system-font,BlinkMacSystemFont,"Helvetica Neue","PingFang SC","Hiragino Sans GB","Microsoft YaHei UI","Microsoft YaHei",Arial,sans-serif
+	font-family: -apple-system-font,BlinkMacSystemFont,"Helvetica Neue","PingFang SC","Hiragino Sans GB","Microsoft YaHei UI","Microsoft YaHei",	Arial,sans-serif;
+	line-height: 1;
 }
-/* 列表元素去掉默认的列表样式 */
 ol, ul {
 	list-style: none;
-}
-/* Table元素的边框折叠 */
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-/* 去掉a标签默认的下划线 */
-a{
-	text-decoration: none;
 }
 /* 去掉input自带的边缘效果和背景颜色 */
 input{
 	outline: none;
 	background: none;
 }
+ /* 去掉a标签默认的下划线 */
+a{
+	text-decoration: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
